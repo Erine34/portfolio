@@ -1,0 +1,48 @@
+# ───────────────────────────────────────────
+#  .gitignore — Portfolio Erine Lopez
+# ───────────────────────────────────────────
+
+# ── Système d'exploitation ──
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ── Éditeurs ──
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ── PHP — sessions & cache ──
+/php/sessions/
+*.session
+*.cache
+*.log
+error_log
+
+# ── Variables d'environnement ──
+# Si tu ajoutes un jour PHPMailer ou une clé SMTP, mets-les ici
+.env
+.env.local
+.env.*.local
+config.local.php
+
+# ── Dépendances (si tu ajoutes npm/composer un jour) ──
+/vendor/
+/node_modules/
+
+# ── Build ──
+/dist/
+/build/
+
+# ── Fichiers temporaires ──
+*.tmp
+*.bak
+*.swp
+*~

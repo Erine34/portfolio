@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio d'Erine Lopez — Développeuse Web, étudiante BUT MMI, en recherche d'alternance 1 semaine par mois à partir de septembre 2026." />
+  <meta name="theme-color" content="#4f46e5" />
+  <title>Erine Lopez — Développeuse Web · Portfolio</title>
+
+  <!-- Open Graph pour partage réseaux sociaux -->
+  <meta property="og:title" content="Erine Lopez — Développeuse Web" />
+  <meta property="og:description" content="Portfolio — BUT MMI · BTS SIO SLAM · Alternance 2026" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://erine-lopez.fr" />
+  <meta property="og:image" content="https://erine-lopez.fr/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Erine Lopez — Développeuse Web" />
+  <meta name="twitter:description" content="Portfolio — BUT MMI · BTS SIO SLAM · Alternance 2026" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SKIP LINK (accessibilité clavier) ===== -->
+  <a href="#main" class="skip-link">Passer au contenu principal</a>
+
+  <!-- ===== BARRE D'ACCESSIBILITÉ ===== -->
+  <div class="a11y-bar" role="toolbar" aria-label="Options d'accessibilité">
+    <button id="btn-font-up" aria-label="Augmenter la taille du texte" title="Augmenter la taille du texte">A+</button>
+    <button id="btn-font-down" aria-label="Diminuer la taille du texte" title="Diminuer la taille du texte">A−</button>
+    <button id="btn-contrast" aria-label="Basculer le contraste élevé" title="Contraste élevé">◑</button>
+    <button id="btn-motion" aria-label="Réduire les animations" title="Réduire les animations">⏸</button>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <a href="#main" class="nav-logo" aria-label="Erine Lopez, développeuse web — retour en haut">EL</a>
+
+      <button class="burger" id="burger" aria-controls="nav-menu" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Alternance 2026</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow g1"></div>
+        <div class="hero-glow g2"></div>
+        <div class="hero-particles" id="particles" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-label="Statut : disponible pour alternance à partir de septembre 2026">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Disponible — Sept. 2026
+          </div>
+          <h1 id="hero-title">
+            <span class="hero-name">Erine</span>
+            <span class="hero-name accent">Lopez</span>
+          </h1>
+          <p class="hero-tagline" aria-label="Développeuse web créative">Développeuse Web Créative</p>
+          <p class="hero-sub">
+            Étudiante BUT MMI · Bac+2 (BTS SIO SLAM)<br />
+            En recherche d'alternance 1 semaine / mois<br />
+            Pézenas–Béziers, Hérault (34)
+          </p>
+          <div class="hero-btns">
+            <a href="#projets" class="btn-primary">Voir mes projets</a>
+            <a href="pdf/CV_Erine_LOPEZ.pdf" class="btn-outline" download aria-label="Télécharger mon CV au format PDF">Télécharger CV</a>
+          </div>
+          <!-- Contact rapide (accessible) -->
+          <div class="hero-quick" aria-label="Coordonnées rapides">
+            <a href="mailto:erine.lopez@etu.umontpellier.fr" aria-label="Envoyer un email">✉ erine.lopez@etu.umontpellier.fr</a>
+            <span aria-hidden="true">·</span>
+            <a href="tel:+33674093053" aria-label="Téléphoner">📞 06 74 09 30 53</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://linkedin.com/in/erine-lopez" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn (ouvre un nouvel onglet)">🔗 LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <div class="avatar-initials">EL</div>
+              <div class="avatar-role">Dev Web</div>
+            </div>
+          </div>
+          <div class="floating-badge fb1">✦ BUT MMI 2025-Maintenant</div>
+          <div class="floating-badge fb2">Erasmus+ · Malte</div>
+          <div class="floating-badge fb3">BTS SIO 2023-2025</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- SKILLS STRIP -->
+    <div class="skills-strip" role="region" aria-label="Technologies maîtrisées">
+      <div class="skills-inner" aria-hidden="true">
+        <!-- Dupliqué pour boucle infinie -->
+        <span class="skill-chip"><span class="skill-dot"></span>HTML5</span>
+        <span class="skill-chip"><span class="skill-dot"></span>CSS3</span>
+        <span class="skill-chip"><span class="skill-dot"></span>JavaScript</span>
+        <span class="skill-chip"><span class="skill-dot"></span>PHP</span>
+        <span class="skill-chip"><span class="skill-dot"></span>SQL / MySQL</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Python</span>
+        <span class="skill-chip"><span class="skill-dot"></span>C#</span>
+        <span class="skill-chip"><span class="skill-dot"></span>A-Frame · WebXR</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Git / GitHub</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Visual Studio Code</span>
+        <span class="skill-chip"><span class="skill-dot"></span>WAMP Server</span>
+        <span class="skill-chip"><span class="skill-dot"></span>HTML5</span>
+        <span class="skill-chip"><span class="skill-dot"></span>CSS3</span>
+        <span class="skill-chip"><span class="skill-dot"></span>JavaScript</span>
+        <span class="skill-chip"><span class="skill-dot"></span>PHP</span>
+        <span class="skill-chip"><span class="skill-dot"></span>SQL / MySQL</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Python</span>
+        <span class="skill-chip"><span class="skill-dot"></span>C#</span>
+        <span class="skill-chip"><span class="skill-dot"></span>A-Frame · WebXR</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Git / GitHub</span>
+        <span class="skill-chip"><span class="skill-dot"></span>Visual Studio Code</span>
+        <span class="skill-chip"><span class="skill-dot"></span>WAMP Server</span>
+      </div>
+      <!-- Version textuelle statique pour lecteurs d'écran -->
+      <p class="sr-only">Technologies : HTML5, CSS3, JavaScript, PHP, SQL, MySQL, Python, C#, A-Frame, WebXR, Visual Studio Code, WAMP Server.</p>
+    </div>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section" aria-labelledby="projets-title">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title" id="projets-title">Mes projets</h2>
+        <p class="section-desc">Des réalisations concrètes, du front-end à l'administration, en passant par la 3D temps réel.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filtrer les projets par technologie">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter-btn" data-filter="php" aria-pressed="false">PHP</button>
+          <button class="filter-btn" data-filter="js" aria-pressed="false">JavaScript</button>
+          <button class="filter-btn" data-filter="csharp" aria-pressed="false">C#</button>
+          <button class="filter-btn" data-filter="stage" aria-pressed="false">Stages</button>
+          <button class="filter-btn" data-filter="scolaire" aria-pressed="false">Projet Scolaire</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" role="list" aria-live="polite" aria-label="Liste des projets">
+
+          <article class="project-card" role="listitem" tabindex="0"
+            data-tags="php js csharp scolaire"
+            aria-label="Site marchand full-stack BTS SIO — front-end PHP/MySQL et back-office C#">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🛒</div>
+              <span class="project-badge">Projet Scolaire</span>
+            </div>
+            <h3 class="project-title">Site marchand full-stack · BTS SIO</h3>
+            <p class="project-desc">
+              E-commerce fictif complet : boutique en PHP reliée à une base MySQL,
+              et application de back-office C# développée en parallèle pour gérer les produits, commandes et utilisateurs.
+            </p>
+            <div class="project-tags" aria-label="Technologies utilisées">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">C#</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+          </article>
+
+          <article class="project-card featured" role="listitem" tabindex="0"
+            data-tags="js scolaire"
+            aria-label="Site Halles de Béziers avec visite virtuelle 3D en A-Frame — projet BUT MMI">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🏛️</div>
+              <span class="project-badge featured-badge">Projet Scolaire</span>
+            </div>
+            <h3 class="project-title">Halles de Béziers · BUT MMI</h3>
+            <p class="project-desc">
+              Site vitrine avec visite virtuelle 3D interactive en JavaScript via A-Frame.
+              Immersion complète dans les halles pour les visiteurs et commerçants locaux.
+            </p>
+            <div class="project-tags" aria-label="Technologies utilisées">
+              <span class="tag">A-Frame</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0"
+            data-tags="js stage"
+            aria-label="Site vitrine lycée Jean Moulin de Béziers — réalisé à la main lors d'un stage chez Soonect">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🏫</div>
+              <span class="project-badge">Stage</span>
+            </div>
+            <h3 class="project-title">Lycée Jean Moulin · Soonect</h3>
+            <p class="project-desc">
+              Premier site réalisé en stage chez Soonect (Pézenas). Site vitrine pour le lycée de Béziers, codé entièrement à la main, sans framework, HTML/CSS/JS pur.
+            </p>
+            <div class="project-tags" aria-label="Technologies utilisées">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Stage · Soonect</span>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0"
+            data-tags="php stage"
+            aria-label="MRHE Services — démarrage d'un site marchand lors d'un stage">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🔧</div>
+              <span class="project-badge">Stage</span>
+            </div>
+            <h3 class="project-title">MRHE Services · Stage</h3>
+            <p class="project-desc">
+              Début de développement d'un site marchand pour une entreprise de services.
+              Réalisé en stage, le projet n'a pas abouti mais a permis de travailler sur l'architecture et le design UI.
+            </p>
+            <div class="project-tags" aria-label="Technologies utilisées">
+              <span class="tag">PHP</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Stage</span>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0"
+            data-tags="js stage"
+            aria-label="Stage Erasmus+ à Malte chez Handson System — logiciel de facturation télécoms">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🌍</div>
+              <span class="project-badge">Stage - Erasmus+</span>
+            </div>
+            <h3 class="project-title">Handson System · Malte</h3>
+            <p class="project-desc">
+              Stage international via Erasmus+ (2025). Conception d'une page web pour un logiciel de facturation télécom.
+              Traduction anglais → français sur des fichiers JSON, intégration front-end.
+            </p>
+            <div class="project-tags" aria-label="Technologies utilisées">
+              <span class="tag">JSON</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Erasmus+</span>
+              <span class="tag">Malte · 2025</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCE -->
+    <section id="experience" class="section section-alt" aria-labelledby="exp-title">
+      <div class="container">
+        <p class="section-label">Parcours</p>
+        <h2 class="section-title" id="exp-title">Expériences</h2>
+        <div class="timeline" role="list" aria-label="Chronologie des expériences professionnelles">
+
+          <div class="timeline-item timeline-item--featured" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-featured-label" aria-hidden="true">★ Erasmus+</div>
+              <time class="timeline-date" datetime="2025">2025</time>
+              <h3 class="timeline-title">Développeuse Web · Handson System</h3>
+              <p class="timeline-company">Techno Park, Malte — <em>Stage international via Erasmus+</em></p>
+              <p class="timeline-desc">Logiciels de facturation et gestion des revenus pour télécoms. Conception de pages web, traduction de l'anglais vers le français sur des fichiers JSON.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2023">2023</time>
+              <h3 class="timeline-title">Développeuse Web · Soonect</h3>
+              <p class="timeline-company">7B Rue Edouard Branly, Pézenas</p>
+              <p class="timeline-desc">Réalisation d'un site internet vitrine pour le lycée Jean Moulin de Béziers. Création de contenu, développement from scratch HTML/CSS/JS.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2022">2022</time>
+              <h3 class="timeline-title">Vendeur informatique · Plenisud Informatique</h3>
+              <p class="timeline-company">ZA Rodettes, Pézenas</p>
+              <p class="timeline-desc">Vente et réparation d'ordinateurs, gestion du stock et des articles.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-date" datetime="2022">2022</time>
+              <h3 class="timeline-title">Vendeur téléphonie · Phone World</h3>
+              <p class="timeline-company">28 Av. de Verdun, Pézenas</p>
+              <p class="timeline-desc">Vente et réparation de téléphones portables.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section" aria-labelledby="apropos-title">
+      <div class="container">
+        <p class="section-label">Qui suis-je</p>
+        <h2 class="section-title" id="apropos-title">À propos de moi</h2>
+        <div class="about-grid">
+
+          <div class="about-col">
+            <div class="about-card" aria-label="Formation scolaire">
+              <h3 class="about-card-title">🎓 Formation</h3>
+              <div class="edu-list">
+                <div class="edu-item">
+                  <time class="edu-year" datetime="2025">2025 → En cours</time>
+                  <p class="edu-name">BUT MMI — Métiers du Multimédia et de l'Internet</p>
+                  <p class="edu-place">Université de Montpellier</p>
+                </div>
+                <div class="edu-item">
+                  <time class="edu-year" datetime="2023/2025">2023 → 2025</time>
+                  <p class="edu-name">BTS SIO option SLAM</p>
+                  <p class="edu-place">Lycée Marc Bloch, Sérignan</p>
+                </div>
+                <div class="edu-item">
+                  <time class="edu-year" datetime="2020/2023">2020 → 2023</time>
+                  <p class="edu-name">Bac Pro Systèmes Numériques — Mention Bien</p>
+                  <p class="edu-place">Lycée Jean Moulin, Béziers</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card" aria-label="Langues parlées">
+              <h3 class="about-card-title">🌐 Langues</h3>
+              <div class="lang-list" role="list">
+                <div class="lang-row" role="listitem">
+                  <span class="lang-name">Français</span>
+                  <span class="lang-level" aria-label="Niveau natif">Natif</span>
+                </div>
+                <div class="lang-row" role="listitem">
+                  <span class="lang-name">Anglais</span>
+                  <span class="lang-level" aria-label="Niveau B1">B1</span>
+                </div>
+                <div class="lang-row" role="listitem">
+                  <span class="lang-name">Espagnol</span>
+                  <span class="lang-level" aria-label="Niveau A1">A1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-col">
+            <div class="about-card" aria-label="Compétences techniques avec barres de progression">
+              <h3 class="about-card-title">💻 Compétences techniques</h3>
+              <div class="skills-list">
+                <div class="skill-row">
+                  <div class="skill-label">
+                    <span>HTML / CSS</span>
+                    <span aria-hidden="true">90 %</span>
+                  </div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML et CSS — 90 %">
+                    <div class="skill-fill" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-label"><span>PHP / SQL</span><span aria-hidden="true">75 %</span></div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="PHP et SQL — 75 %">
+                    <div class="skill-fill" data-width="75"></div>
+                  </div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-label"><span>JavaScript</span><span aria-hidden="true">70 %</span></div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript — 70 %">
+                    <div class="skill-fill" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-label"><span>C#</span><span aria-hidden="true">55 %</span></div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="C# — 55 %">
+                    <div class="skill-fill" data-width="55"></div>
+                  </div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-label"><span>Python</span><span aria-hidden="true">45 %</span></div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Python — 45 %">
+                    <div class="skill-fill" data-width="45"></div>
+                  </div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-label"><span>A-Frame / 3D Web</span><span aria-hidden="true">60 %</span></div>
+                  <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="A-Frame et 3D Web — 60 %">
+                    <div class="skill-fill" data-width="60"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card" aria-label="Compétences personnelles">
+              <h3 class="about-card-title">🤝 Soft skills</h3>
+              <div class="soft-tags" role="list" aria-label="Compétences personnelles">
+                <span class="tag" role="listitem">Travail en équipe</span>
+                <span class="tag" role="listitem">Adaptabilité</span>
+                <span class="tag" role="listitem">Rigueur</span>
+                <span class="tag" role="listitem">Sens du détail</span>
+                <span class="tag" role="listitem">Permis B + véhicule</span>
+                <span class="tag" role="listitem">Mobilité Hérault</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-badge" aria-label="En recherche d'alternance">Recherche d'alternance</div>
+          <h2 class="section-title" id="contact-title">Travaillons ensemble</h2>
+          <p class="contact-sub">
+            1 semaine par mois à partir de septembre 2026.<br />
+            Basée à Saint-Thibéry (34630), mobile en voiture.
+          </p>
+
+          <!-- Formulaire de contact -->
+          <div class="contact-form-wrap" aria-label="Formulaire de contact">
+            <form id="contact-form" action="https://formspree.io/f/REMPLACE_PAR_TON_ID" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nom complet <span aria-hidden="true">*</span><span class="sr-only">obligatoire</span></label>
+                  <input type="text" id="name" name="name" required autocomplete="name"
+                    placeholder="Votre nom"
+                    aria-required="true"
+                    aria-describedby="name-error" />
+                  <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span aria-hidden="true">*</span><span class="sr-only">obligatoire</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email"
+                    placeholder="votre@email.com"
+                    aria-required="true"
+                    aria-describedby="email-error" />
+                  <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance..." autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span><span class="sr-only">obligatoire</span></label>
+                <textarea id="message" name="message" required rows="5"
+                  placeholder="Parlez-moi de votre entreprise et de votre besoin..."
+                  aria-required="true"
+                  aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <button type="submit" class="btn-submit" aria-describedby="form-status">Envoyer le message</button>
+              <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+            </form>
+          </div>
+
+          <!-- Liens directs -->
+          <div class="contact-links" aria-label="Autres moyens de contact">
+            <a href="mailto:erine.lopez@etu.umontpellier.fr" class="contact-link" aria-label="Envoyer un email à Erine Lopez">
+              <span aria-hidden="true">✉️</span> erine.lopez@etu.umontpellier.fr
+            </a>
+            <a href="tel:+33674093053" class="contact-link" aria-label="Appeler le 06 74 09 30 53">
+              <span aria-hidden="true">📞</span> 06 74 09 30 53
+            </a>
+            <a href="https://linkedin.com/in/erine-lopez" class="contact-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Visiter le profil LinkedIn d'Erine Lopez (ouvre un nouvel onglet)">
+              <span aria-hidden="true">🔗</span> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Erine Lopez — Développeuse Web · Saint-Thibéry, Hérault</p>
+      <p class="footer-a11y">
+        Ce site respecte les recommandations <abbr title="Référentiel Général d'Amélioration de l'Accessibilité">RGAA</abbr>
+        et <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 AA.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
