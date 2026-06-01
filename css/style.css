@@ -266,7 +266,7 @@ body {
 }
 .badge-dot {
   width: 7px; height: 7px; background: #6ee7b7; border-radius: 50%;
-  animation: pulse-dot 2s infinite;
+  animation: pulse-dot 3s infinite;
 }
 @keyframes pulse-dot { 0%,100%{opacity:1;} 50%{opacity:0.35;} }
 
@@ -318,7 +318,7 @@ h1 {
   background: linear-gradient(135deg, var(--indigo-600), var(--violet-600));
   display: flex; align-items: center; justify-content: center;
   position: relative;
-  animation: avatar-rotate 8s linear infinite;
+  animation: avatar-rotate 14s linear infinite;
 }
 @keyframes avatar-rotate {
   from { box-shadow: 0 0 0 0 rgba(79,70,229,0.4); }
@@ -342,9 +342,9 @@ h1 {
   padding: 0.45rem 0.9rem; font-size: 0.73rem; color: var(--indigo-200);
   white-space: nowrap; font-weight: 500;
 }
-.fb1 { top: 8%; right: -10px; animation: float 6s ease-in-out infinite; }
-.fb2 { top: 42%; left: -25px; animation: float 6s ease-in-out infinite 2s; }
-.fb3 { bottom: 12%; right: -15px; animation: float 6s ease-in-out infinite 4s; }
+.fb1 { top: 8%; right: -10px; animation: float 10s ease-in-out infinite; }
+.fb2 { top: 42%; left: -25px; animation: float 10s ease-in-out infinite 2s; }
+.fb3 { bottom: 12%; right: -15px; animation: float 10s ease-in-out infinite 4s; }
 @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
 
 .hero-scroll {
@@ -354,7 +354,7 @@ h1 {
 }
 .hero-scroll span {
   width: 4px; height: 8px; background: var(--indigo-400); border-radius: 99px;
-  animation: scroll-indicator 3s infinite;
+  animation: scroll-indicator 5s infinite;
 }
 @keyframes scroll-indicator { 0%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(14px)} }
 
@@ -369,7 +369,7 @@ h1 {
 }
 .skills-inner {
   display: flex; gap: 2.5rem; width: max-content;
-  animation: scroll-strip 44s linear infinite;
+  animation: scroll-strip 80s linear infinite;
 }
 @keyframes scroll-strip { from{transform:translateX(0);} to{transform:translateX(-50%);} }
 .skill-chip {
