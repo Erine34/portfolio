@@ -342,9 +342,9 @@ h1 {
   padding: 0.45rem 0.9rem; font-size: 0.73rem; color: var(--indigo-200);
   white-space: nowrap; font-weight: 500;
 }
-.fb1 { top: 8%; right: -10px; animation: float 3s ease-in-out infinite; }
-.fb2 { top: 42%; left: -25px; animation: float 3s ease-in-out infinite 1s; }
-.fb3 { bottom: 12%; right: -15px; animation: float 3s ease-in-out infinite 2s; }
+.fb1 { top: 8%; right: -10px; animation: float 6s ease-in-out infinite; }
+.fb2 { top: 42%; left: -25px; animation: float 6s ease-in-out infinite 2s; }
+.fb3 { bottom: 12%; right: -15px; animation: float 6s ease-in-out infinite 4s; }
 @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
 
 .hero-scroll {
@@ -354,7 +354,7 @@ h1 {
 }
 .hero-scroll span {
   width: 4px; height: 8px; background: var(--indigo-400); border-radius: 99px;
-  animation: scroll-indicator 2s infinite;
+  animation: scroll-indicator 3s infinite;
 }
 @keyframes scroll-indicator { 0%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(14px)} }
 
@@ -369,7 +369,7 @@ h1 {
 }
 .skills-inner {
   display: flex; gap: 2.5rem; width: max-content;
-  animation: scroll-strip 22s linear infinite;
+  animation: scroll-strip 44s linear infinite;
 }
 @keyframes scroll-strip { from{transform:translateX(0);} to{transform:translateX(-50%);} }
 .skill-chip {
