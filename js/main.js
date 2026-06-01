@@ -392,22 +392,34 @@ function announceToScreenReader(message) {
   const container = document.getElementById('particles');
   if (!container) return;
 
-  const count = window.innerWidth < 768 ? 6 : 18;
-  for (let i = 0; i < count; i++) {
-    const dot = document.createElement('div');
-    const size = Math.random() * 3 + 1.5;
-    dot.style.cssText = `
-      position: absolute;
-      width: ${size}px; height: ${size}px;
-      border-radius: 50%;
-      background: rgba(99,102,241,${Math.random() * 0.5 + 0.15});
-      left: ${Math.random() * 100}%;
-      top: ${Math.random() * 100}%;
-      animation: float ${Math.random() * 6 + 5}s ease-in-out infinite;
-      animation-delay: ${Math.random() * 6}s;
-    `;
-    container.appendChild(dot);
+  // Mesure le vrai FPS pour corriger la durée sur écrans haute fréquence
+  let _frames = 0, _start = null;
+  function _measureFps(ts) {
+    if (!_start) _start = ts;
+    _frames++;
+    if (_frames < 10) { requestAnimationFrame(_measureFps); return; }
+    const fps = Math.round(_frames / ((ts - _start) / 1000));
+    const factor = fps >= 100 ? fps / 60 : 1;
+
+    const count = window.innerWidth < 768 ? 6 : 18;
+    for (let i = 0; i < count; i++) {
+      const dot = document.createElement('div');
+      const size = Math.random() * 3 + 1.5;
+      const dur  = (Math.random() * 6 + 5) * factor;
+      dot.style.cssText = `
+        position: absolute;
+        width: ${size}px; height: ${size}px;
+        border-radius: 50%;
+        background: rgba(99,102,241,${Math.random() * 0.5 + 0.15});
+        left: ${Math.random() * 100}%;
+        top: ${Math.random() * 100}%;
+        animation: float ${dur}s ease-in-out infinite;
+        animation-delay: ${Math.random() * 6}s;
+      `;
+      container.appendChild(dot);
+    }
   }
+  requestAnimationFrame(_measureFps);
 })();
 
 /* ─── 11. THÈME SOMBRE / CLAIR (toggle optionnel) ─── */
