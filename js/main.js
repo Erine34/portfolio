@@ -5,6 +5,61 @@
 
 'use strict';
 
+/* ─── 0. CORRECTION ANIMATIONS — REFRESH RATE ─── */
+(function fixAnimationSpeed() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let frames = 0;
+  let start  = null;
+
+  function measure(ts) {
+    if (!start) start = ts;
+    frames++;
+    if (frames < 10) { requestAnimationFrame(measure); return; }
+
+    const fps    = Math.round(frames / ((ts - start) / 1000));
+    if (fps < 100) return;
+    const factor = fps / 60;
+
+    // Floating badges
+    document.querySelectorAll('.fb1, .fb2, .fb3, .floating-badge').forEach(el => {
+      const cur = parseFloat(getComputedStyle(el).animationDuration) || 6;
+      el.style.animationDuration = (cur * factor) + 's';
+    });
+
+    // Skills strip
+    const strip = document.querySelector('.skills-inner');
+    if (strip) {
+      const cur = parseFloat(getComputedStyle(strip).animationDuration) || 44;
+      strip.style.animationDuration = (cur * factor) + 's';
+    }
+
+    // Scroll indicator
+    const scrollInd = document.querySelector('.hero-scroll');
+    if (scrollInd) {
+      const cur = parseFloat(getComputedStyle(scrollInd).animationDuration) || 3;
+      scrollInd.style.animationDuration = (cur * factor) + 's';
+    }
+
+    // Particules hero (générées dynamiquement)
+    function fixParticles() {
+      document.querySelectorAll('#particles > div').forEach(dot => {
+        if (dot.dataset.fpsFixed) return;
+        const cur = parseFloat(dot.style.animationDuration) || 8;
+        dot.style.animationDuration = (cur * factor) + 's';
+        dot.dataset.fpsFixed = '1';
+      });
+    }
+    fixParticles();
+    const container = document.getElementById('particles');
+    if (container) {
+      new MutationObserver(fixParticles).observe(container, { childList: true });
+    }
+  }
+
+  requestAnimationFrame(measure);
+})();
+
 /* ─── 1. NAVIGATION MOBILE ─── */
 (function initBurger() {
   const burger = document.getElementById('burger');
